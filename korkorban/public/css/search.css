@@ -1,0 +1,55 @@
+		.section {
+			position: absolute;
+			margin:auto;
+			right:0px;
+		    display: flex;	
+		}
+	.G-input {
+		width:280px;
+		padding: 6px 12px;
+		border:none;
+		border-bottom:1px solid black;
+	    float:left;
+	    outline: none;
+	    color:#6a4057;
+	    background: transparent;
+	    z-index: 99;
+	    position: relative;
+    	border-radius: 0;
+    	border-color: #ccc;
+    	border-width: 0 0 2px 0; 
+	    border-style: none none solid none;
+	    box-shadow: none;
+	}
+	.G-input:focus {
+		outline: none
+	}
+	.G-button {
+		border-top:none;
+		border-left:none;
+		border-right:none;
+		border-right-color:#ccc;
+		outline: none;
+	    width:50px;
+	    background-color: transparent;		
+	}
+	.G-button:hover {
+		transition: 0.7s;
+		cursor:pointer;
+		color:black;
+	}
+	input[type=text]:focus{
+	    outline: none;
+	    border-color:transparent;
+	   	box-shadow: none !important;
+		border-color: #6a4057 !important;
+	}
+	#googlebutton {
+	    z-index: 99;
+	    position: relative;
+	}
+	.box-down {
+		position: relative;
+		width:85vw;
+		margin:auto;
+	}

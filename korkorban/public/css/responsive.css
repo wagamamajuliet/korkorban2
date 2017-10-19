@@ -1,0 +1,211 @@
+		.box {
+			/*padding: 5%;*/
+			/*margin:5%;*/
+		}
+
+		.box1{height:50px;}
+		.box2{height:100px;}
+		.box3{height:150px;}
+		.box4{height:200px;}
+		.box5{height:250px;}
+		.box6{height:300px;}
+		.box7{height:350px;}
+		.box8{height:400px;}
+		.box9{height:450px;}
+		.box10{height:500px;}
+		.box80vh{height:80vh;}
+		.box_vh_95{height:95vh;}
+		.box_vh{height:100vh;}
+		.box45{height:4500px;}
+
+		.box5vh{height:5vh;}
+		.box7vh{height:7vh;}
+		.box8vh{height:8vh;}
+		.box9vh{height:9vh;}
+		.box10vh{height:10vh;}
+		.box11vh{height:11vh;}
+		.box12vh{height:12vh;}
+		.box13vh{height:13vh;}
+		.box14vh{height:14vh;}
+		.box15vh{height:15vh;}
+		.box80vh{height:80vh;}
+
+		.box10per{height:10%;}
+		.box20per{height:20%;}
+		.box20vh{height:20vh;}
+		.box25vh{height:25vh;}
+		.box30per{height:30%;}
+		.box40per{height:40%;}
+		.box50per{height:50%;}
+		.box50vh{height:50vh;}
+		.box60vh{height:60vh;}
+		.box60per{height:60%;}
+		.box70per{height:70%;}
+		.box80per{height:80%;}
+		.box90per{height:90%;}
+		.box100per{height:100%;}
+		.box100vh{height:100vh;}
+
+		.colcenter {width:50%;}
+		.col5per{width:5%;}
+		.col7per{width:7%;}
+		.col71per{width:7.1111111111111111%;}
+		.col8per{width:8%;}
+		.col9per{width:9%;}
+		.col10per{width:10%;}
+		.col15per{width:15%;}
+		.col16per{width:16%;}
+		.col17per{width:17%;}
+		.col18per{width:18%;}
+		.col19per{width:19%;}
+		.col20per{width:20%;}
+		.col24per{width:24.250000%;}
+		.col25per{width:25%;}
+		.col30per{width:30%;}
+		.col33per{width:33.333333%;}
+		.col40per{width:40%;}
+		.col50per{width:50%;}
+		.col60per{width:60%;}
+		.col70per{width:70%;}
+		.col75per{width:75%;}
+		.col80per{width:80%;}
+		.col90per{width:90%;}
+		.col100per{width:100%;}
+
+		.col10per{width:10%;}
+		.col20per{width:20%;}
+		.col30per{width:30%;}
+		.col35per{width:35%;}
+		.col40per{width:40%;}
+		.col50per{width:50%;}
+		.col60per{width:60%;}
+		.col65per{width:65%;}
+		.col70per{width:70%;}
+		.col80per{width:80%;}
+		.col90per{width:90%;}
+		.col100per{width:100%;}
+
+
+		.row1{width:20%;}
+		.row2{width:40%;}
+		.row3{width:60%;}
+		.row4{width:80%;}
+		.row5{width:100%;}
+		.row6{width:120%;}
+		.row7{width:140%;}
+		.row8{width:160%;}
+		.row9{width:180%;}
+		.row10{width:200%;}
+
+		.col .col1{width:10%;}
+		.col .col2{width:20%;}
+		.col .col3{width:30%;}
+		.col .col4{width:40%;}
+		.col .col5{width:50%;}
+		.col .col6{width:60%;}
+		.col .col7{width:70%;}
+		.col .col8{width:80%;}
+		.col .col9{width:90%;}
+		.col .col10{width:100%;}
+	.col {
+		/*z-index: 99;*/
+		position: relative;
+		/*margin-bottom:0%;*/
+		float:left;		
+	}
+/*	.border-solid:nth-child(n):hover {
+		transition: 0.7s;
+		cursor:pointer;
+		background-color:#ff5191;  
+	}*/
+	.col-float-zero {
+		float:left;		
+	}
+	.row{
+		float: left;
+		width:20%;
+		padding:8px;
+	}
+
+	.flex-columns {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+
+	.wrapper {
+		height: 350px;
+		position: relative;
+		padding-left: 5%;
+		padding-right: 5%;				
+		width: 100%;
+	}
+
+
+	/*/flex*/
+	.flex-columns-center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}	
+	.flex-columns-start {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}	
+	.flex-columns-end {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}	
+
+
+	.float-forever {
+		float:left !important;	
+	}
+/*	@media handheld, only screen and (max-width: 1100px) {
+		.nav-h1 {
+			font-size: 0.8rem;
+		}
+	}
+	@media handheld, only screen and (max-width: 800px) {
+		.border-solid {
+		    position: relative;
+		    border-bottom: 1px solid #ff5191 !important; 
+		}
+		.nav-h1 {
+			border-right: 1px solid #ff5191;
+			border-bottom: 1px solid #ff5191;
+			font-size: 100%;
+		}
+		.col{
+			margin-bottom: 0%;
+			float:none;		
+		}		
+		.col8per,
+		.col9per,
+		.col16per {
+			width:100%;
+		}
+		.box8vh {
+		}
+		.astral-header {
+
+	     height: 120vh; 
+		}
+	}*/
+/* Mobile Size: 767px 이하 
+/*@media handheld, only screen and (max-width: 767px) {
+
+	.col{
+		margin-bottom: 0%;
+		float:none;		
+	}
+	.wrapper .col33per, .col40per, .col60per {
+		width:100%;
+	}
+	.float-forever {
+		float:left !important;	
+	}
+}*/

@@ -1,0 +1,127 @@
+	<div class="astral-header">
+		<div class="col col100per">
+			<div class="box box25vh border-dotted box-up">
+				<div class="astral-header-Left"></div>
+				<div class="astral-header-Center">
+					<img src="img/korkorban.png">
+				</div>
+				<div class="astral-header-Right">
+					<div class="astral-header-Right-Grid">
+						<div class="astral-header-Right-Up"></div>
+						<div class="astral-header-Right-Down">
+							<div class="astral-header-Right-Down-Up">
+								{{# if login }}	
+								<p>{{this.name}}</p>
+								<p>{{this.email}}</p>
+								{{ else }}
+								<p>Name</p>
+								<p>Email</p>								
+								{{/if}}	
+							</div>
+							<div class="astral-header-Right-Down-Down">
+								<div class="astral-header-Right-Down-Down-Grid user">
+									<div class="astral-header-Right-Down-Down-Up">
+										<i class="icon-user"></i>
+									</div>
+									<div class="astral-header-Right-Down-Down-Down">
+										<p>USER</p>
+									</div>
+									<div class="user2">
+		                        {{# if login }}
+		                            <li class="logliUp"><a href="/profile">PROFILE</a></li>
+		                            <li class="logliDown"><a href="/logout">LOGOUT</a></li>
+		                        {{ else }}
+		                            <li class="logliUp"><a href="/signin">LOGIN</a></li>
+		                            <li class="logliDown"><a href="/signup">SIGN UP</a></li>
+		                        {{/if}}				
+									</div>
+								</div>
+								<div class="astral-header-Right-Down-Down-Grid cartClick">
+									<div id="cart-show"></div>
+									<div class="astral-header-Right-Down-Down-Up">
+										<i class="icon-basket"></i>
+									</div>
+									<div class="astral-header-Right-Down-Down-Down">
+										<p>CART</p>
+									</div>
+								</div>
+								<div class="astral-header-Right-Down-Down-Grid">
+									<div class="astral-header-Right-Down-Down-Up">
+										<i class="icon-doc-text"></i>
+									</div>
+									<div class="astral-header-Right-Down-Down-Down">
+										<P>NOTICE</P>
+									</div>
+								</div>
+								<div class="astral-header-Right-Down-Down-Grid">
+									<div class="astral-header-Right-Down-Down-Up">
+										<i class="icon-help"></i>
+									</div>
+									<div class="astral-header-Right-Down-Down-Down">
+										<P>FAQ</P>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col col100per">
+			<div class="box box5vh border-dotted box-down">
+				<div>
+					<img src="img/korkorban2.png">
+					<div class="section">
+						<input type="text" id="googleinput" class="G-input" name="" placeholder="SEARCH">
+				            <button id="button" class="G-button googlebutton">
+				                <i class="icon-search"></i>
+				            </button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col col100per scroll">
+			<div class="box box20vh border-dotted box-ul">
+				<ul>
+					<li class="korkorban-li-img">
+						<div class="korkorban-li-img-Up">
+							<img src="img/korkorban1pink.png">
+						</div>
+						<div class="korkorban-li-img-Down">
+							<img src="img/korkorban2pink.png">							
+						</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li1">Home</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li2">Lady</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li3">Men</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li4">Kid</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li5">Pet</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li6">Daily Commodities</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li7">Electronic</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li8">Food</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li9">Handmade</div>
+					</li>
+					<li class="korkorban-li">
+						<div class="korkorban-li10">Gift Set</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>

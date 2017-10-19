@@ -1,0 +1,254 @@
+			/*//*/
+			.slide_image {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			/* cycle-slideshow */
+			.cycle-slideshow {
+				width:90vw;
+				margin:auto;
+				height: 90vh;
+				display: block;
+				position: relative;
+				overflow: hidden;
+			}
+			.cycle-slideshow img {
+				position: absolute;
+				width:100%;
+				height:100%;
+			}
+			.cycle-prev, .cycle-next {
+				font-size: 200%;
+				color: #FFF;
+				display: block;
+				position: absolute;
+				top: 50%;
+				margin-top: -16px;
+				z-index: 9999;
+				cursor: pointer;
+			}
+			.cycle-prev {
+				left: 10%;
+				color:black;
+			}
+			.cycle-next {
+				right: 10%;
+				color:black;
+			}
+			.cycle-pager {
+				width: 100%;
+				position: absolute;
+				top: 20px;
+				text-align: center;
+				z-index: 9999;
+				cursor: pointer;
+			}
+			.cycle-pager span {
+				text-indent: 100%;
+				white-space: nowrap;
+				width: 10px;
+				height: 10px;
+				display: inline-block;
+				border: 1px solid #FFF;
+				border-radius: 50%;
+				margin: 0 10px;
+			}
+			.cycle-pager .cycle-pager-active { background: #FFF;}
+
+
+		/*/slider*/
+
+		.slider1,
+		.slider2 {
+			position: relative;
+		  margin: 0 auto;
+		}
+
+		.slide_viewer {
+			margin:auto;
+			width: 85vw;
+		  height: 440px;
+		  overflow: hidden;
+		  position: relative;
+		}
+
+		.slide_group1,
+		.slide_group2 {
+		  height: 100%;
+		  position: relative;
+		  width: 100%;
+		}
+
+		.slide1,
+		.slide2 {
+		  display: none;
+		  height: 100%;
+		  position: absolute;
+		  width: 100%;
+		}
+
+		.slide1:first-child,
+		.slide2:first-child {
+		  display: block;
+		}
+
+		.slide:nth-of-type(1) {
+		  background: #D7A151;
+		}
+
+		.slide:nth-of-type(2) {
+		  background: #F4E4CD;
+		}
+
+		.slide:nth-of-type(3) {
+		  background: #C75534;
+		}
+
+		.slide:nth-of-type(4) {
+		  background: #D1D1D4;
+		}
+
+		.slide_buttons1,
+		.slide_buttons2 {
+		  left: 0;
+		  position: absolute;
+		  right: 0;
+		  text-align: center;
+		}
+
+		a.slide_btn {
+		  color: #474544;
+		  font-size: 42px;
+		  margin: 0 0.175em;
+		  -webkit-transition: all 0.4s ease-in-out;
+		  -moz-transition: all 0.4s ease-in-out;
+		  -ms-transition: all 0.4s ease-in-out;
+		  -o-transition: all 0.4s ease-in-out;
+		  transition: all 0.4s ease-in-out;
+		}
+
+		.slide_btn.active, .slide_btn:hover {
+		  color: #428CC6;
+		  cursor: pointer;
+		}
+
+		.directional_nav {
+		  height: 150px;
+		  margin: 0 auto;
+		  position: relative;
+		  top: -140px;
+		}
+
+		.previous_btn1,
+		.previous_btn2 {
+		  width:100px;
+		  height:100px;
+		  font-size: 50px;
+		  bottom: 0;
+		  left: 100px;
+		  margin: auto;
+		  position: absolute;
+		  top: 0;
+		}
+
+		.next_btn1,
+		.next_btn2 {
+		  width:100px;
+		  height:100px;
+		  font-size:50px;
+		  bottom: 0;
+		  margin: auto;
+		  position: absolute;
+		  right: 100px;
+		  top: 0;
+		}
+
+		.previous_btn, .next_btn {
+		  cursor: pointer;
+		  height: 65px;
+		  opacity: 0.5;
+		  -webkit-transition: opacity 0.4s ease-in-out;
+		  -moz-transition: opacity 0.4s ease-in-out;
+		  -ms-transition: opacity 0.4s ease-in-out;
+		  -o-transition: opacity 0.4s ease-in-out;
+		  transition: opacity 0.4s ease-in-out;
+		  width: 65px;
+		}
+
+		.previous_btn:hover, .next_btn:hover {
+		  opacity: 1;
+		}
+
+		.slide-left {
+			padding: 5%;
+			padding-top:  7%;
+			padding-bottom:  7%;
+			float:left;
+			position: relative;
+			width:50%;
+			height:100%;
+			background-color:#f4e4cd; 
+		}
+		.slide-right {
+			float:left;
+			position: relative;
+			width:50%;
+			height:100%;
+			background-color: black !important;
+		}
+		.slide-right img {
+			position: absolute;
+			width:100%;
+			height:100%;
+		}
+		.slide-left-up {
+			border-top: 1px solid #6a4057;
+			border-bottom: 1px solid #6a4057;
+			position: relative;
+			width:100%;
+			height:70px;
+		}
+		.slide-left-up h1 {
+			font-size: 20px;
+			text-align: center;
+			line-height: 70px;
+			color:#6a4057;
+		}
+		.slide-left-center {
+			text-align: center;
+			position: relative;
+			width:100%;
+			height:70px;
+		}
+		.slide-left-center p {
+			position: relative;
+			padding-top: 40px;
+			color:#6a4057;
+		}
+		.slide-left-down {
+			position: relative;
+			width:100%;
+			height:140px;
+		}
+		.slide-left-down-btn {
+			z-index: 99;
+			position: absolute;
+			top:50%;
+			left:50%;
+			margin-top: -25px;
+			margin-left: -75px;
+			width:150px;
+			height: 50px;
+			background-color:#6a4057; 
+			color:white;
+			text-align: center;
+			line-height: 50px;
+		}
+		.slide-left-down-btn:hover {
+			transition: 0.7s;
+			cursor: pointer;
+			border:1px solid #6a4057;
+			background-color: white;
+			color:#6a4057;
+		}

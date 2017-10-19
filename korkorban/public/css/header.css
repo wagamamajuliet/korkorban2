@@ -1,0 +1,90 @@
+		.astral-header-Left {
+			position: relative;
+			width:27.5%;
+			height: 25vh;
+			float:left;
+		}
+		.astral-header-Center {
+			position: relative;
+			width:45%;
+			height: 25vh;
+			float:left;
+		}
+		.astral-header-Right {
+			position: relative;
+			width:27.5%;
+			height: 25vh;
+			float:left;
+		}
+		.astral-header-Right-Up {
+			position: relative;
+			width:100%;
+			height:30px;
+		}
+		.astral-header-Right-Down {
+			border:1px solid #6a4057;
+			position: relative;
+			width:100%;
+			height:130px;			
+		}
+		.astral-header-Right-Down-Up {
+			position: relative;
+			width:100%;
+			height: 50%;
+		}
+		.astral-header-Right-Down-Up p {
+			padding-top:10px;
+			color:#6a4057;
+			text-align: right;
+		}
+		.astral-header-Right-Down-Down {
+			background-color:#6a4057; 
+			position: relative;
+			width:100%;
+			height:50%;
+		}
+		.astral-header-Right-Down-Down-Grid {
+			position: relative;
+			float: left;
+			width:25%;
+			height:100%;
+		}
+		.astral-header-Right-Down-Down-Grid:hover {
+			transition: 0.7s;
+			cursor: pointer;
+			background-color: white;	
+			border: 1px solid #6a4057;		
+		}
+		.astral-header-Right-Down-Down-Grid:hover .astral-header-Right-Down-Down-Up i,
+		.astral-header-Right-Down-Down-Grid:hover .astral-header-Right-Down-Down-Down p {
+			transition: 0.7s;
+			cursor: pointer;
+			color:#6a4057;
+		}
+		.astral-header-Right-Down-Down-Up i {
+			text-align: center;
+			font-size:30px;
+			position: absolute;
+			width:100%;
+			height:100%;
+			color:white;
+		}
+		.astral-header-Right-Down-Down-Up {
+			position: relative;
+			width:100%;
+			height: 70%;
+		}
+		.astral-header-Right-Down-Down-Down {
+			position: relative;
+			width:100%;
+			height:30%;
+		}
+		.astral-header-Right-Down-Down-Down p {
+			text-align: center;
+			color:white;
+		}
+		.astral-header-Right-Grid {
+			position: absolute;
+			right:0px;
+			/*width:300px;*/
+		}

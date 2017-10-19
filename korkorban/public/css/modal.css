@@ -1,0 +1,291 @@
+	/*//modal*/
+		.modal {
+			display: none;
+			position: fixed;
+			z-index:1;
+			left:0;
+			top:0;
+			height:100%;
+			width:100%;
+			overflow:auto;
+			background-color: rgba(0,0,0,0.5);
+			z-index: 99999 !important;
+			overflow-y: hidden;
+		}
+		.modal-content {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			margin:1% auto;
+			padding: 20px;
+			width:1000px;
+			box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 5px 8px 0 rgba(0,0,0,0.2);
+			animation-name: modalopen;
+			animation-duration: 1s;
+			z-index: 99999 !important;
+		}
+		.modal-content img {
+			width:100%;
+			height:200px;
+		}
+		@keyframes modalopen {
+			from{opacity: 0}
+			to{opacity: 1}
+		}
+		.modal-content img {
+			float:left;
+			width:50%;
+			height: 100%;
+		}
+		.modal-up {
+			position: relative;
+			height: 10vh;
+			text-align: center;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.modal-up img {
+			position: absolute;
+			width:10%;
+			height: 100%;
+		}
+		.modal-up h1 {
+			color:gray;
+			position: absolute;
+		}
+		.modal-down {
+			margin-top: 10px;
+			position: relative;	
+		}
+		.closeBtn {
+			position: absolute;
+			right:0px;
+			color:#ccc;
+			float:right;
+			font-size: 30px;
+		}
+		.closeBtn:hover ,.closeBtn:focus {
+			color:#000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		.rightDiv {
+			padding:1%;
+			float:right;
+			width:50%;
+		}
+		.rightDiv h1 {
+			color:gray;
+		}
+		.rightDiv li {
+			list-style: none;
+			text-decoration: none;
+		}
+		.rightDiv p {
+			color:gray;
+		}
+		.rightDiv li p:hover {
+			cursor: pointer;
+			transition:0.7s;
+			color:black;
+		}
+		.iualbumPicImg:hover {
+			cursor: pointer;
+			transition: 0.7s;
+			opacity: 0.7;
+		}
+
+		.rightDiv-Price {
+			width:100%;
+			height:50px;
+		}
+		.rightDiv-Price p {
+			font-size: 30px;
+			float:left;
+		}
+		.rightDiv-Quantity {
+			position: relative;
+			width:100%;
+			height:150px;
+		}
+		.rightDiv-Input {
+			padding: 0 20%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			line-height: 50px;
+			width:100%;
+			height:50px;
+		}
+		.rightDiv-SHOW-MORE-DETAIL {
+			height: 70px;
+		}
+		.rightDiv-ADD-TO-CART {
+			height: 70px;
+		}
+		.rightDiv-Input-Grid {
+			position: relative;
+			width:100%;
+			height:100%;
+		}
+		fieldset {
+		    padding: 20px;
+		    margin: 20px 0;
+		    border: 3px solid #222;
+		}
+		legend {
+			color:white;
+		    padding: 10px;
+		    font-size: 18px;
+		    letter-spacing: 0.1em;
+		}
+		select {
+			height: 50px;
+			float: left;
+			appearance:none;
+			display: block;
+			padding:  12px 12px 12px 12px;
+			background: url(img/select.png) no-repeat 95% center;
+			background-color: #6a4057;
+			color: #fff;
+			border-radius: 4px;
+			border:2px solid #fff;
+			width:140px;
+		}
+		label {
+			text-align: left;
+			float:left;
+		}
+		.modal-input-number {
+			position: absolute;
+			left:0px;
+			height: 25px;
+			float: left;
+			appearance:none;
+			display: block;
+			padding:  6px 6px 6px 6px;
+			/*background: url(img/select.png) no-repeat 95% center;*/
+			color: #6a4057;
+			border-radius: 4px;
+			border:2px solid #fff;
+			border-bottom:1px solid #6a4057;
+			outline:none;
+			width:140px;
+		}
+		.ADD-TO-CART,
+		.SHOW-MORE-DETAIL {
+			position: relative;
+			background-color:#6a4057; 
+			padding: 15px;
+			color:#fff;
+			font-size: 20px;
+			letter-spacing: 0.1em;
+			border-radius: 4px;
+			border:0;
+			box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+			width:280px;
+			left:50%;
+			margin-left:-140px;
+		}
+		.ADD-TO-CART:hover,
+		.SHOW-MORE-DETAIL:hover {
+			transition: 0.7s;
+			cursor: pointer;
+			background-color: white;
+			color:#6a4057;
+		} 
+		/*//modal content*/
+		.stats-container{
+			float: left;
+			background:#fff;	
+			position:relative;
+			left:0;
+			width: 50%;
+			height: 100%;
+			-webkit-transition: all 200ms ease-out; 
+		       -moz-transition: all 200ms ease-out; 
+		         -o-transition: all 200ms ease-out; 
+		            transition: all 200ms ease-out;
+		}
+		.make3D.animate .stats-container{
+			top:265px;
+			-webkit-transition: all 200ms ease-out; 
+		       -moz-transition: all 200ms ease-out; 
+		         -o-transition: all 200ms ease-out; 
+		            transition: all 200ms ease-out; 
+		}
+		.stats-container .product_name{
+			font-size: 15px;
+		    color: #393c45;
+		    font-weight: 700;
+		}
+		.stats-container p{
+			font-size:15px;
+			color:#b1b1b3;	
+		}
+		.stats-container .product_price{
+			float:right;
+			color:#6a4057;
+			font-size:22px;
+			font-weight:600;
+		}
+		.product-options strong {
+		    font-weight: 700;
+		    color: #393c45;
+		    font-size: 14px;
+		}
+		.product-options span {
+		    color: #969699;
+		    font-size: 14px;
+		    display: block;
+		}
+		div.colors div {
+		    margin-top: 3px;
+		    width: 15px;
+		    height: 15px;
+		    margin-right: 5px;
+		    float: left;
+		}
+		div.colors div span {
+		    width: 15px;
+		    height: 15px;
+		    display: block;
+		    border-radius: 50%;
+		}
+		div.c-blue span {
+		    background: #6e8cd5;
+		}
+		div.c-red span {
+	    	background: #f56060;
+		}
+		div.c-white span {
+		    background: #fff;
+		    width: 14px;
+		    height: 14px;
+		    border: 1px solid #e8e9eb;
+		}
+		div.c-green span {
+	    	background: #44c28d;
+		}
+		/*//*/
+		.sale-Price {
+			text-decoration: line-through;
+		}
+		.rightDiv-Price-First {
+			text-decoration: line-through;
+		}
+		.rightDiv-Price-Center {
+			position: relative;
+			left:10px;
+		}
+		.rightDiv-Price-Second {
+			position: relative;
+			left:20px;
+		}
+		.box-up {
+			margin:auto;
+			position: relative;
+			width:85vw;
+		}

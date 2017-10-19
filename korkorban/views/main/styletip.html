@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STYLE TIP</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+	<style type="text/css">
+		*, *:before, *:after {
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		*:before,*:after{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+
+		}
+		.main {
+			width: 85vw;
+			height: 500vh;
+			margin:auto;
+			/*background-color: gray;*/
+		}
+		header {
+			position: relative;
+			width: 100%;
+			height:45vh;
+			/*background-color: green;*/
+							white-space: nowrap; 
+				overflow: hidden;
+		}
+		header h1 {
+			/*display: inline-block;*/
+			/*display: inline;*/
+			position: relative;
+			font-size: 80px;
+		}
+		header h3 {
+			/*display: inline;*/
+			position: relative;
+			font-size: 20px;
+		}
+		h1:before {
+			    margin:0;
+		}
+		h1:after {
+			    margin:0;
+		}		
+		nav {
+			/*border:1px solid black;*/
+			width: 100%;
+			height: 20%;
+			align-items: center;
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			white-space: nowrap; 
+			overflow: hidden;
+		}
+		nav a {
+			display: inline-block;
+			text-decoration: none;
+			justify-content: flex-end;
+			color: #8d8d8d;
+			float: left;
+			margin-left: 30px;
+		}
+		.down_grid {
+			position: relative;
+			width: 100%;
+			height:80%;
+		}
+		.down_grid_grid {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 40px 0;
+			white-space: nowrap; 
+			overflow: hidden;
+		}
+		.down_grid_grid h1 {
+			text-align: center;
+		}
+		.down_grid_grid h3 {
+			/*padding-top: 10px;*/
+			padding-left: 10px;
+			text-align: left;
+			font-weight: 300;
+			/*font-family: 'Germania One', cursive;*/
+			font-family: 'Raleway', sans-serif;
+		}
+		.h3One {
+			padding-top: 10px;
+
+		}
+		.down_grid_grid_grid {
+			padding: 0 100px;
+			/*position: relative;*/
+			width:600px;
+			height: 150px;
+			margin: auto;
+		}
+		.header_grid {
+			padding: 15px 0;
+			width: 100%;
+			height: 100%;
+		}
+		.header_grid_grid {
+			width: 100%;
+			height: 100%;			
+		}
+		.center {
+			width: 100%;
+			position: relative;
+			height:455vh;
+		}
+		.nav {
+			width: 100%;
+			position: relative;
+			height:7vh;
+		}
+		.nav ul {
+			width: 100%;
+			height: 100%;
+			/*position: absolute;*/
+			display: flex;
+			justify-content: space-between;
+			text-decoration: none;
+			white-space: nowrap; 
+			overflow: hidden;
+		}
+		.nav ul li {
+			align-items: center;
+			display: inline-block;
+			margin:10px 0;
+			list-style: none;
+			justify-content: flex-end;
+			color: black;
+			float: left;
+			line-height: 3vh;
+			font-size: 13px;
+		}
+		.nav:before, .nav:after {
+
+			  content:'';
+		      border-bottom:1px solid black;
+		      width:100%;
+		      display: block;
+		      margin:0 auto;
+		}
+		/*//*/
+			html {box-sizing: border-box;}
+	*,
+	*:before,
+	*:after {
+		box-sizing: inherit;
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		font-family: "Source Sans Pro", Sans-Serif;
+		font-size: 1.2em;
+		line-height: 1.375em;
+		padding: 0;
+		margin: 0;
+		background-color: #FFF;
+		-webkit-font-smoothing: antialiased;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+	.col {
+		height: 70vh;
+		flex: 1;
+		margin: .6em; 
+		color: #FFF;
+		background-color: #f5f5f5;
+	}
+
+	@media screen and (min-width: 500px){
+		.row {flex-flow: row wrap;}
+		.col {flex: 1 1 40%;}
+
+		/*.row:nth-child(3) .col {flex: 1;}*/
+	}
+
+				@media screen and (min-width: 800px){
+					.col {flex: 1;}
+				}
+				.col_up_grid {
+					position: relative;
+					width: 100%;
+					height:60%;
+				}
+				.col_down_grid {
+					position: relative;
+					width: 100%;
+					height:40%;
+				}
+				.col_down_grid_grid {
+					padding: 15px;
+					width:100%;
+					height: 100%;
+				}
+				.col_up_img_grid {
+					background-size: cover;
+					position: absolute;
+					width:100%;
+					height: 100%;
+					background-image: url(img/gucci.png);
+					background-repeat: no-repeat;
+				}
+			.col_down_grid_grid p{
+					float: left;
+					position: relative;
+				font-size: 15px;
+			    color: #393c45;
+			    font-weight: 700;
+			}
+			.col_down_grid_grid_grid {
+				white-space: nowrap; 
+				overflow: hidden;
+				width:100%;
+				float: left;
+				height: 40%;
+			}
+			.light_html {
+				margin-left: 10px;
+			}
+			/*//*/
+			.slide_image {
+				position: absolute;
+				width: 100%;
+				height: 100%;}
+			/* cycle-slideshow */
+			.cycle-slideshow {
+				width: 100%;
+				/*max-width: 960px;*/
+				height: 90vh;
+				display: block;
+				position: relative;
+				/*margin:20px auto;*/
+				overflow: hidden;
+			}
+			.cycle-slideshow img {
+				position: absolute;
+				width:100%;
+				height:100%;
+			}
+			.cycle-prev, .cycle-next {
+				font-size: 200%;
+				color: #FFF;
+				display: block;
+				position: absolute;
+				top: 50%;
+				margin-top: -16px;
+				z-index: 9999;
+				cursor: pointer;
+			}
+			.cycle-prev {left: 10%;}
+			.cycle-next {right: 10%;}
+			.cycle-pager {
+				width: 100%;
+				position: absolute;
+				top: 20px;
+				text-align: center;
+				z-index: 9999;
+				cursor: pointer;
+			}
+			.cycle-pager span {
+				text-indent: 100%;
+				white-space: nowrap;
+				width: 10px;
+				height: 10px;
+				display: inline-block;
+				border: 1px solid #FFF;
+				border-radius: 50%;
+				margin: 0 10px;
+			}
+			.cycle-pager .cycle-pager-active { background: #FFF;}
+
+			/*//보여지는 가격표*/
+			#show-Total {
+				white-space:nowrap;
+				overflow-y: scroll;
+				height: 500px;
+				padding: 25px;
+				top:10%;
+				z-index: 999;
+				position: fixed;
+				background-color: black;
+				opacity: 0.7;
+				width:600px;
+				/*height: 400px;*/
+			}
+			#show-Total h2 {
+				height: 40px;
+				margin-bottom:5%;
+				position: relative;
+				text-align: center;
+				color:white;
+				overflow: hidden;
+			}
+			#show-Total li {
+				line-height: 100px;
+				top:10px;
+				width:100%;
+				height: 100px;
+				position: relative;
+				/*text-align: center;*/
+				color:white;
+			}
+			#show-Total p {
+				/*float: left;*/
+				font-size: 1em;
+   				 line-height: 1em;
+				/*display: inline;*/
+			}
+			#show-Total div {
+				color:white;
+			}
+			.cancle {
+				z-index: 999;
+				/*border: 1px solid white;*/
+				/*width: 100%;*/
+				display: inline;
+				height: 40px;
+				top: 5%;
+				font-size: 40px;
+				position: absolute;
+				left:90%;
+				color:blue;
+				cursor: pointer;
+				/*font-size: 3em;*/
+  				font-weight: 300;
+			}
+			.cancle:hover {
+				color: red;
+				transition: 0.7s;
+			}
+
+			/*add=to-cart*/
+			.add-to-cart {
+				text-align: left;
+				position: relative;
+				text-decoration: none;
+				color: #393c45;
+			}
+
+			.col_down_grid_grid li {
+				list-style: none;
+				text-align: left;
+			}
+			.col_down_grid_grid li:hover {
+				background-color: gray;
+			}
+			/*//Tab*/
+			.sunglassTab {
+				/*display: none;*/
+				width:100%;
+				height:3600px;
+			}
+			.clothTab {
+				/*display: none;*/
+				width:100%;
+				height:3600px;
+			}
+			.toggle {
+				display: block;
+			}
+			.nav ul li:hover {
+				cursor: pointer;
+				transition: 0.7s;
+				background-color: black;
+				color:white;
+			}
+
+			#count-cart {
+				color:blue;
+				background-color: black;
+			}
+			#total-cart {
+				color:blue;
+				background-color: black;
+			}
+
+			button {
+				margin-left:10px;
+			}
+
+			.imgli {
+				position: relative;
+				/*width:100px;*/
+				height:100px;
+			}
+			#show-cart img {
+				float:left;
+			}
+			#show-cart li {
+				margin-top:5px;
+				display: flex;
+				flex-direction: row;
+				/*justify-content: center;*/
+				align-items: center;
+			}
+			#show-cart li p {
+				float:left;
+			}
+			#show-cart li input {
+				float:left;
+			}
+			#show-cart li button {
+				width: 15px;
+				float:left;
+			}
+
+			.imgli {
+				width:20%;
+			}
+			.showP {
+				text-align: center;
+				width:20%;
+			}
+			.item-count {
+				width:10%;
+			}
+			.showDiv {
+				padding-left: 10px;
+				text-align: center;
+				width:30%;
+			}
+			.showDiv p:nth-child(2) {
+				padding-left: 5px;
+			}
+			.showDiv p:nth-child(3) {
+				padding-left: 5px;
+			}
+			.showDiv p:nth-child(4) {
+				padding-left: 5px;
+			}
+			.showBtn {
+				width:20%;
+			}
+
+
+
+#show-cart {
+	top: 45px;
+	font-size: 15px;
+/*	position: relative;
+	width: 100%;
+	height: 70px;*/
+	color: #b1b1b3;
+	text-decoration: none;
+	list-style: none;
+}
+.item-count {
+	font-size: 1.2em;
+    line-height: 1.375em;
+	/*line-height: 10px;*/
+	border-width: 0;
+	height: 20px;
+	width:9%;
+}
+.plus-item, .subtract-item, .delete-item {
+	font-size: 1.2em;
+/*    line-height: 1.375em;
+    height: 20px;
+	width:10%;*/
+	border-width: 0;
+}
+.col_down_grid_grid h1{
+	width:100%;
+	height: 30%;
+	/*top: 25px;*/
+	position: relative;
+	font-size: 15px;
+	color: #b1b1b3;
+	display: inline;
+}
+	</style>
+</head>
+<body>
+	<div class="main">
+			<div id="show-Total" id="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
+				<div>
+					<h1 class="cancle">X</h1>
+					<h2>Your shopping basket</h2>
+					<div>You have <span id="count-cart">X</span> Item in your cart</div>
+					<div>Total Cart: $<span id="total-cart"></span></div>
+				</div>
+
+				<ul id="show-cart">
+					<li></li>
+				</ul>
+			</div>
+			<header>
+				<div class="header_grid">
+					<div class="header_grid_grid">
+					<nav>
+						<a href="">LOGIN</a>
+						<a href="">JOIN</a>
+						<a href="">CART</a>
+						<a href="" class="mypage">MYPAGE</a>
+						<a href="">CONTACT</a>
+					</nav>
+					<div class="down_grid">
+						<div class="down_grid_grid">	
+							<div class="down_grid_grid_grid">
+								<h1 class="">CHOUETTE</h1><br>
+								<h3 class="h3One">City person</h3>
+								<h3 class="">In the subterranean city</h3>
+								<h3 class="">In black suit</h3>
+								<h3 class="">In white shirt</h3>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</header>
+		<!-- <div class="center"> -->
+			<div class="nav">
+				<ul>
+				    <li>MAN</li>
+				    <li>WOMAN</li>
+					<li class="choicecloth">CLOTH</li>	
+					<li>BAG</li>
+					<li class="choicesunglass">SUNGLASS</li>
+					<li>CART</li>
+					<li>MYPAGE</li>
+					<li>CONTACT</li>
+				</ul>
+			</div>
+			<!-- Responsive Image Slider -->
+
+		<div class="cycle-slideshow">
+		  <span class="cycle-prev">&#9001;</span>
+		  <span class="cycle-next">&#9002;</span>
+		  <span class="cycle-pager"></span>
+		  <img class="slide_image" src="img/slide_a.jpg" alt="sun flare photo by S A Bokhari">
+		  <img class="slide_image"  src="img/slide_b.jpg" alt="cloud 1 flare photo by S A Bokhari">
+		  <img class="slide_image" src="img/slide_c.jpg" alt="cloud 2 flare photo by S A Bokhari">
+		  <img class="slide_image" src="img/slide_d.jpg" alt="cloud 3 flare photo by S A Bokhari">
+		</div>
+		<!-- </div> -->
+	<div class="sunglassTab">
+		<div class="row">
+		<div class="col">
+			<div class="col_up_grid">
+				<img src="img/o.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스A">옷A</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="30,000">￦30000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스A" data-price="10000" data-img="">선글라스A ￦10,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/p.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스B">선글라스B</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스B" data-price="20000">선글라스B ￦20,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/q.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스C">선글라스C</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스C" data-price="30000">선글라스C ￦30,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/r.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스D">선글라스D</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스D" data-price="40000">선글라스D ￦40,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/gucci.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스E">선글라스E</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스E" data-price="50000">선글라스E ￦50,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/b.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스F">선글라스F</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스F" data-price="60000">선글라스F ￦60,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/c.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스G">선글라스G</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스G" data-price="70000">선글라스G ￦70,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/c.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스H">선글라스H</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스H" data-price="80000">선글라스H ￦80,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/e.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스I">선글라스I</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스I" data-price="90000">선글라스I ￦90,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/f.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스J">선글라스J</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스J" data-price="100000">선글라스J ￦100,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/g.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스K">선글라스K</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스K" data-price="110000">선글라스K ￦110,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/h.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스L">선글라스L</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스L" data-price="120000">선글라스L ￦120,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/i.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스M">선글라스M</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스M" data-price="130000">선글라스M ￦130,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/j.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스N">선글라스N</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스N" data-price="140000">선글라스N ￦140,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/k.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스O">선글라스O</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스O" data-price="150000">선글라스O ￦150,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/l.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스P">선글라스P</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스P" data-price="160000">선글라스P ￦160,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="clothTab">
+		<div class="row">
+		<div class="col">
+			<div class="col_up_grid">
+				<img src="img/a.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스A">선글라스A</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="30,000">￦30000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스A" data-price="10000" data-img="img/a.png">선글라스A ￦10,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/b.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스B">선글라스B</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스B" data-price="20000" data-img="img/b.png">선글라스B ￦20,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/c.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스C">선글라스C</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스C" data-price="30000" data-img="img/c.png">선글라스C ￦30,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/d.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스D">선글라스D</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스D" data-price="40000" data-img="img/d.png">선글라스D ￦40,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/e.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스E">선글라스E</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스E" data-price="50000" data-img="img/e.png">선글라스E ￦50,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/f.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스F">선글라스F</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스F" data-price="60000" data-img="img/f.png">선글라스F ￦60,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/g.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스G">선글라스G</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스G" data-price="70000" data-img="img/g.png">선글라스G ￦70,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/h.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스H">선글라스H</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스H" data-price="80000" data-img="img/h.png">선글라스H ￦80,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/i.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스I">선글라스I</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스I" data-price="90000" data-img="img/i.png">선글라스I ￦90,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/j.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스J">선글라스J</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스J" data-price="100000" data-img="img/j.png">선글라스J ￦100,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/k.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스K">선글라스K</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스K" data-price="110000" data-img="img/k.png">선글라스K ￦110,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/l.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스L">선글라스L</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스L" data-price="120000" data-img="img/l.png">선글라스L ￦120,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/m.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스M">선글라스M</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스M" data-price="130000" data-img="img/m.png">선글라스M ￦130,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/n.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스N">선글라스N</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스N" data-price="140000" data-img="img/n.png">선글라스N ￦140,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/o.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스O">선글라스O</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스O" data-price="150000" data-img="img/o.png">선글라스O ￦150,000</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+						<div class="col_up_grid">
+				<img src="img/p.png" class="col_up_img_grid">
+			</div>
+			<div class="col_down_grid">
+				<div class="col_down_grid_grid">
+					<div class="col_down_grid_grid_grid">
+						<p class="left_html sunglassName" data-name="선글라스P">선글라스P</p>
+						<p class="light_html sunglassSale" name="">SALE</p>
+						<p class="light_html sunglassPrice" data-price="70,000">￦70000</p>
+					</div>
+					<h1>A small description</h1>
+					<li><a href="#" class="add-to-cart" data-name="선글라스P" data-price="160000" data-img="img/p.png">선글라스P ￦160,000</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		// $('.choicecloth').click(function() {
+  //         $('.clothTab').addClass();
+  //         $('.sunglassTab').removeClass();
+  //       })
+
+		// $('.choicesunglass').click(function() {
+  //         $('.clothTab').removeClass();
+  //         $('.sunglassTab').addClass();
+  //       })
+  		$(document).ready(function() {
+		  $('.clothTab').show();
+		  $('.sunglassTab').hide();
+		  
+		  $('.choicecloth').click(function(){
+		    
+		    // Content
+		    $('.sunglassTab').hide();
+		    $('.clothTab').show();
+		  });
+
+		  $('.choicesunglass').click(function(){
+		    
+		    // Content
+		    $('.clothTab').hide();
+		    $('.sunglassTab').show();
+		    
+		  });
+		}); 
+
+
+
+        $('.cancle').click(function() {
+          $('#show-Total').hide();
+          })
+
+		var shoppingCart = (function(){
+			//private methods and properties
+			var cart = [];
+
+			var Item = function(name, price, count , img) {
+				this.name = name;
+				this.price = price;
+				this.count = count;
+				this.img = img;
+			};
+			var saveCart = function() {
+				sessionStorage.setItem("shoppingCart", JSON.stringify(cart));
+			};
+
+			var loadCart = function() {
+				cart = JSON.parse(sessionStorage.getItem("shoppingCart"));
+			};
+
+		
+
+			//public methods and properties
+			var obj = {};
+			obj.addItemToCart = function(name, price, count, img) {
+				// for (var i in cart) {
+				// 	if(cart[i].name === name) {
+				// 		cart[i].count ++;
+				// 		saveCart();
+				// 		return;
+				// 	}
+				// }
+				var item = new Item(name, price, count, img);
+				cart.push(item);
+				saveCart();
+			};
+
+			obj.removeItemFromCart = function (name) {
+				for (var i in cart) {
+					if(cart[i].name === name) {
+						cart[i].count --;
+						if(cart[i].count === 0) {
+							cart.splice(i,1);
+						}
+						break;
+					}
+				}
+				saveCart();
+			}
+
+			obj.clearCart = function() {
+				cart = [];
+				saveCart();
+			}
+
+			obj.countCart = function() {
+				var totalCount = 0;
+				for(var i in cart) {
+					totalCount += cart[i].count;
+				}
+
+				return totalCount;
+			}
+
+			obj.totalCart = function() {
+				var totalCost = 0;
+				for(var i in cart) {
+					totalCost += cart[i].price * cart[i].count;
+				}
+				return totalCost.toLocaleString();
+			}
+
+			obj.listCart =function() {
+				var cartCopy = [];
+				for(var i in cart) {
+					var item = cart[i];
+					var itemCopy = [];
+					for(var p in item) {
+						itemCopy[p] = item[p];
+					}
+					itemCopy.total = (item.price * item.count);
+					cartCopy.push(itemCopy);
+				}
+				return cartCopy;
+			}
+
+			obj.removeItemFromCartAll = function(name) {
+				for(var i in cart) {
+					if(cart[i].name === name) {
+						cart.splice(i, 1);
+						break;
+					}
+				}
+				saveCart();
+			}
+
+			obj.setCountForItem = function(name,count) {
+				for (var i in cart) {
+					if(cart[i].name === name) {
+						cart[i].count = count;
+						break;
+					}
+					saveCart();
+				}
+			}
+
+			loadCart();
+
+			return obj;
+		})();
+
+				displayCart();
+
+		// var array = listCart();
+		// array[0].name = "Mistake";
+		// console.log("------------------------");
+		// console.log(array);
+
+
+	// $("#total-cart").html("99.75");
+
+	$(".add-to-cart").click(function(event){
+		event.preventDefault();
+		var name = $(this).attr("data-name");
+		var price = Number($(this).attr("data-price"));
+		var img = $(this).attr("data-img");
+		console.log("Click add to cart:"+name+" "+price+" "+img);
+
+		shoppingCart.addItemToCart(name, price, 1,img);
+		displayCart();
+	});
+
+	$("#clear-cart").click(function(event){
+		shoppingCart.clearCart();
+		displayCart();
+	});
+
+	function displayCart() {
+		console.log("*** display Cart ***");
+		var cartArray = shoppingCart.listCart();
+		console.log("*** Count Cart ***"+ cartArray.length);
+		var output = "";
+		for(var i in cartArray) {
+			// output +="<li>"+cartArray[i].name+" "+cartArray[i].count+"</li>"
+			output += "<li>"+"<img class='imgli' src='"+cartArray[i].img+"'>"
+			+"<p class='showP'>"+cartArray[i].name+"</p>"
+			+" <input class='item-count' type='number' data-name='"
+			+ cartArray[i].name
+			+"' value='"+ cartArray[i].count+"'>"
+			+"<div class='showDiv'>"
+			+"<p>"+" x "+"</p>" + "<p>"+cartArray[i].price.toLocaleString()+"</p>"
+			+"<p>"+" = "+"</p>" + "<p>"+cartArray[i].total.toLocaleString()+"</p>"
+			+"</div>"
+			+"<div class='showBtn'>"
+			+ "<button class='plus-item' data-name='"
+			+cartArray[i].name+"'>+</button>"
+			+ "<button class='subtract-item' data-name='"
+			+cartArray[i].name+"'>-</button>"
+			+ "<button class='delete-item' data-name='"
+			+cartArray[i].name+"'>X</button>" 
+			+"</div>"
+			+"</li>";
+
+		}
+	// function displayCart() {
+	// 	console.log("*** display Cart ***");
+	// 	var cartArray = shoppingCart.listCart();
+	// 	console.log("*** Count Cart ***"+ cartArray.length);
+	// 	var output = "";
+	// 	for(var i in cartArray) {
+	// 		output += "<li>"+"<img class='imgli' src='"+cartArray[i].img+"'>"
+	// 		+"<p>"+cartArray[i].name+"</p>"
+	// 		+" <input class='item-count' type='number' data-name='"
+	// 		+ cartArray[i].name
+	// 		+"' value='"+ cartArray[i].count+"'>"
+	// 		+" x " + cartArray[i].price.toLocaleString()
+	// 		+ " = " +cartArray[i].total.toLocaleString()
+	// 		+ "<button class='plus-item' data-name='"
+	// 		+cartArray[i].name+"'>+</button>"
+	// 		+ "<button class='subtract-item' data-name='"
+	// 		+cartArray[i].name+"'>-</button>"
+	// 		+ "<button class='delete-item' data-name='"
+	// 		+cartArray[i].name+"'>X</button>" 
+	// 		+"</li>";
+
+	// 	}
+
+		// var input = document.querySelectorAll('input');
+		// input.innerHTML.toLocaleString();
+		// cartArray[i].price.toLocaleString();
+		// cartArray[i].total.toLocaleString();
+		$("#show-cart").html(output);
+		$("#count-cart").html(shoppingCart.countCart());
+		$("#total-cart").html(shoppingCart.totalCart());
+	}
+
+	$("#show-cart").on("click", ".delete-item", function(event){
+		var name = $(this).attr("data-name");
+		shoppingCart.removeItemFromCartAll(name);
+		displayCart();
+	});
+
+	$("#show-cart").on("click", ".subtract-item", function(event){
+		var name = $(this).attr("data-name");
+		shoppingCart.removeItemFromCart(name);
+		displayCart();
+	});
+
+	$("#show-cart").on("click", ".plus-item", function(event){
+		var name = $(this).attr("data-name");
+		shoppingCart.addItemToCart(name, 0 ,1);
+		displayCart();
+	});
+
+	$("#show-cart").on("change", ".item-count", function(event){
+		var name = $(this).attr("data-name");
+		var count = Number($(this).val());
+		shoppingCart.setCountForItem(name, count);
+		displayCart();
+	});
+
+	$(document).ready(function(){
+        $(".mypage").click(function(){
+           $("#show-Total").toggle();
+           $("#show-Total").animate({width:"600px"});
+           // $("#form_before_lounch").children("p").animate({fontSize:"25px"});
+        })
+    })
+
+
+	</script>
+</body>
+</html>
